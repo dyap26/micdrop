@@ -14,9 +14,9 @@ function RootNavigator() {
 }
 
 export default function App() {
-  return (
-    <AuthProvider>
-      <RootNavigator />
-    </AuthProvider>
-  );
-}
+    return (
+        <AuthProvider>
+          <RootNavigator />
+        </AuthProvider>
+    );
+    }

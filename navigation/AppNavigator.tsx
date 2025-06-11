@@ -16,7 +16,7 @@ const Stack = createNativeStackNavigator();
 export default function AppNavigator({ isLoggedIn }: AppNavigatorProps) {
   return (
     <NavigationContainer>
-      <Stack.Navigator>
+      <Stack.Navigator id={undefined}>
         {isLoggedIn ? (
           <>
             <Stack.Screen name="Home" component={HomeScreen} />
