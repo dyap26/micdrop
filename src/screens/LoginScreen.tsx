@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
-import { View, TextInput, Button, Text, Pressable } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
-import { supabase } from '../utils/supabase';
 import type { NativeStackNavigationProp } from '@react-navigation/native-stack';
+import React, { useState } from 'react';
+import { Button, Pressable, Text, TextInput, View } from 'react-native';
+import { supabase } from '../../utils/supabase';
 import type { RootStackParamList } from '../types/navigation';
 
 type NavigationProp = NativeStackNavigationProp<RootStackParamList, 'Login'>;

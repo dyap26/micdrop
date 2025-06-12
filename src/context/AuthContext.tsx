@@ -1,7 +1,7 @@
 // context/AuthContext.tsx
-import { createContext, useContext, useEffect, useState, ReactNode } from 'react';
-import { supabase } from '../utils/supabase';
-import { Session, User } from '@supabase/supabase-js';
+import { User } from '@supabase/supabase-js';
+import { createContext, ReactNode, useContext, useEffect, useState } from 'react';
+import { supabase } from '../../utils/supabase';
 
 type AuthContextType = {
   user: User | null;

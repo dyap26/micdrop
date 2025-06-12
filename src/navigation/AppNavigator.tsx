@@ -1,10 +1,10 @@
 // AppNavigator.tsx or AppNavigator.jsx (TypeScript assumed)
-import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import React from 'react';
 
-import HomeScreen from '../screens/HomeScreen';
 import AlbumDetailScreen from '../screens/AlbumDetailScreen';
+import HomeScreen from '../screens/HomeScreen';
 import LoginScreen from '../screens/LoginScreen';
 
 type AppNavigatorProps = {

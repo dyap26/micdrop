@@ -1,7 +1,7 @@
 // App.tsx
 import React from 'react';
-import { AuthProvider, useAuth } from './context/AuthContext';
-import AppNavigator from './navigation/AppNavigator';
+import { AuthProvider, useAuth } from './src/context/AuthContext';
+import AppNavigator from './src/navigation/AppNavigator';
 
 function RootNavigator() {
   const { isLoggedIn, loading } = useAuth();
