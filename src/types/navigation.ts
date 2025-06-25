@@ -1,6 +1,9 @@
 export type RootStackParamList = {
-    Login: undefined;
-    Signup: undefined;
-    Home: undefined;
-    AlbumDetail: { albumId: string }; // Example with params
-  };
+  Home: undefined;
+  Login: undefined;
+  Search: undefined;
+  Profile: undefined;
+  Signup: undefined;
+    
+  AlbumDetail: { albumId: string }; // Example with params
+};

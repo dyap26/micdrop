@@ -7,6 +7,8 @@ import AlbumDetailScreen from '../screens/AlbumDetailScreen';
 import HomeScreen from '../screens/HomeScreen';
 import LoginScreen from '../screens/LoginScreen';
 import SignupScreen from '../screens/SignupScreen';
+import SearchScreen from '../screens/SearchScreen';
+import ProfileScreen from '../screens/SearchScreen';
 
 type AppNavigatorProps = {
   isLoggedIn: boolean;
@@ -32,6 +34,8 @@ export default function AppNavigator({ isLoggedIn }: AppNavigatorProps) {
           options={{ headerShown: false }}
         />
 
+        <Stack.Screen name="Search" component={SearchScreen} />
+        <Stack.Screen name="Profile" component={ProfileScreen} />
         {/* Protected screen */}
         {isLoggedIn && (
           <Stack.Screen name="AlbumDetail" component={AlbumDetailScreen} />

@@ -8,7 +8,7 @@ import { Ionicons } from '@expo/vector-icons';
 import type { NativeStackNavigationProp } from '@react-navigation/native-stack';
 import type { RootStackParamList } from '../types/navigation';
 
-const navigation = useNavigation<NativeStackNavigationProp<RootStackParamList>>();
+
 
 function SectionHeader({ title }: { title: string }) {
   return <Text className="text-xl font-bold mt-6 mb-2 px-4 text-orange-400 dark:text-orange-300">{title}</Text>;
@@ -36,7 +36,7 @@ function AlbumRow({ albums }: { albums: any[] }) {
 }
 
 export default function HomeScreen() {
-  const navigation = useNavigation();
+  const navigation = useNavigation<NativeStackNavigationProp<RootStackParamList>>();
   const { user, isLoggedIn } = useAuth();
   const colorScheme = useColorScheme();
 
