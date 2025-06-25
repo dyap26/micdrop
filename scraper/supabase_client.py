@@ -42,3 +42,17 @@ def upload_album_data(album_data):
                 "song_id": song["id"],
                 "artist_id": artist["id"]
             }).execute()
+
+def already_scraped_artist(spotify_id):
+    result = supabase.table("crawled_artists").select("id").eq("spotify_id", spotify_id).execute()
+    return bool(result.data)
+
+def already_scraped_album(spotify_id):
+    result = supabase.table("crawled_albums").select("id").eq("spotify_id", spotify_id).execute()
+    return bool(result.data)
+
+def mark_artist_scraped(spotify_id):
+    supabase.table("crawled_artists").insert({"spotify_id": spotify_id}).execute()
+
+def mark_album_scraped(spotify_id):
+    supabase.table("crawled_albums").insert({"spotify_id": spotify_id}).execute()
