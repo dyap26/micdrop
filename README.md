@@ -1,6 +1,6 @@
 # Welcome to MicDrop
 
-MicDrop is an app that allows users to review albums and songs with the aim of creating a community of music lovers.
+MicDrop is an app that allows users to review albums and songs with the aim of creating a community of music lovers. This is currently an ongoing project which aims to improve over time.
 
 # The Stack
 The app is built with Expo, TypeScript, Supabase, and Python. All album and artist data is from the Spotify API.
