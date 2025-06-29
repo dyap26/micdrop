@@ -6,7 +6,7 @@ MicDrop is an app that allows users to review albums and songs with the aim of c
 The app is built with Expo, TypeScript, and Supabase.
 
 # What's Included
-Included is the app.
+Included is the app, which can be run using Expo Go with the command `npx expo start`
 
 # What's Not Included
 Supabase environment keys are NOT included. If you want to help, please reach out.
